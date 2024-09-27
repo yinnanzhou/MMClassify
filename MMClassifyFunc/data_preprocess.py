@@ -94,8 +94,8 @@ def get_loader_hdf5(samples, labels):
 
     trainset = TensorDataset(train_X, train_Y)
     testset = TensorDataset(test_X, test_Y)
-    trainloader = DataLoader(trainset, batch_size=256, shuffle=True)
-    testloader = DataLoader(testset, batch_size=256, shuffle=True)
+    trainloader = DataLoader(trainset, batch_size=512, shuffle=True)
+    testloader = DataLoader(testset, batch_size=512, shuffle=True)
     return trainloader, testloader
 
 

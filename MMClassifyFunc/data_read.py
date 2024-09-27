@@ -176,7 +176,7 @@ def get_data_hdf5_wly(
             C = int(parts[-2]) - 1  # personIndex
             D = int(parts[-1])  # repeatIndex
 
-            Zxx = f[key]["spec_mmwave"][0:40, :]
+            Zxx = f[key]["diff_spec_mmwave_rso"][0:40, :]
             # Zxx = f[key]["spec_mmwave"][5:300, :]
             # Zxx = f[key]["spec_mmwave"][0:40, :]
             # 未说话的时间索引
